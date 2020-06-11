@@ -7,13 +7,17 @@
   }
 
   &__text-content {
-    padding-top: 60px;
+    padding-top: 88px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
     width: 100%;
     text-align: center;
+
+    @mixin atMedium {
+      padding-top: 60px;
+    }
   }
 
   &__title {
@@ -21,10 +25,11 @@
     color: $mainBlue;
     margin: 0;
     font-size: 2.4rem;
-
+  
     @mixin atSmall {
       font-size: 4.8rem;
     }
+
   }
 
   &__subtitle {
@@ -36,13 +41,14 @@
     @mixin atSmall {
       font-size: 2.9rem;
     }
+
   }
 
   &__description {
-    color: white;
+    color: #FFF;
     font-size: 1.1rem;
     font-weight: 100;
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
     max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
@@ -51,4 +57,5 @@
       font-size: 1.875rem;
     }
   }
+
 }
